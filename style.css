@@ -19,13 +19,7 @@ body {
   margin: 0;
   padding: 30px;
   color: #666666;
-  background-image: url('pink_background.jpg'); 
-  
-  /* 画像を画面全体にぴったりフィットさせる魔法の設定 */
-  background-size: cover;       /* 画面の隙間を埋めるように画像を拡大縮小する */
-  background-position: center;  /* 画像の中心が常に画面の真ん中にくるようにする */
-  background-repeat: no-repeat; /* 画像が格子状に何枚もリピートされるのを防ぐ */
-  background-attachment: fixed; /* 画面をスクロールしても背景が動かないように固定
+  background-color: #FFFAFC;
 }
 
 /* --------------------
