@@ -101,6 +101,7 @@ th, td {
 /* --------------------
   横長（4:3）にする設定
 -------------------- */
+/* スケッチを入れる外側の箱 */
 .sketch-container {
   width: 100%;
   max-width: 500px;
@@ -108,10 +109,15 @@ th, td {
   overflow: hidden;
 }
 
+/* スケッチ本体（iframe）の設定 */
 .sketch-container iframe {
-  width: 100%;
-  aspect-ratio: 4 / 3; /* 横4：縦3の比率に固定 */
-  height: auto;
-  display: block;
-  overflow: hidden;
+  width: 100% !important;  /* 親の箱の横幅に絶対合わせる */
+  aspect-ratio: 3 / 4;     /* 3:4の比率に固定（4:3なら4/3にしてね） */
+  height: auto !important; /* 高さを自動計算 */
+  display: block;          /* 下にできる謎の隙間を消す */
+  border: none;            /* 枠線を消す */
+  
+/* 👇 ここから下がスクロールバーを完全に消すための追加設定 👇 */
+  overflow: hidden !important; 
+  pointer-events: auto;
 }
