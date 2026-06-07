@@ -19,7 +19,7 @@ body {
   margin: 0;
   padding: 30px;
   color: #666666;
-  background-color: #fff0f5;
+  background-color: #FFFAFC;
 }
 
 /* --------------------
@@ -113,4 +113,5 @@ th, td {
   aspect-ratio: 4 / 3; /* 横4：縦3の比率に固定 */
   height: auto;
   display: block;
+  overflow: hidden;
 }
